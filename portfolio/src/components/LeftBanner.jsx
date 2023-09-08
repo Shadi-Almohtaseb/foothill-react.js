@@ -15,7 +15,7 @@ const LeftBanner = () => {
           <img
             src={shapeImage}
             alt="shade image"
-            className=" w-full h-[40rem] -mt-16"
+            className=" w-full h-[40rem] -mt-11"
           />
           <div className="absolute top-0 text-white md:pl-10 pl-10 pt-20 flex gap-7 flex-col">
             <span className="lg:text-[2rem] text-[1.5rem] font-[400]">
