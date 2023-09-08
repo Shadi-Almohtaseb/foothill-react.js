@@ -12,9 +12,17 @@ const NavBar = () => {
   const isLinkActive = (path) => path === activeLink;
 
   return (
-    <nav className="flex items-center justify-between px-24 h-20 sticky top-0">
+    <nav className="flex items-center justify-between lg:px-24 px-8 h-20 sticky top-0 backdrop-blur-md bg-white/30 z-10">
       <span className="font-bold text-2xl tracking-[8px]">LOGO</span>
-      <ul className="flex items-center justify-center gap-16 font-semibold text-[18px]">
+      <span className="lg:hidden flex">
+        <img
+          width="33"
+          height="50"
+          src="https://img.icons8.com/ios-filled/50/menu--v6.png"
+          alt="menu--v6"
+        />
+      </span>
+      <ul className="hidden lg:flex items-center justify-center gap-16 font-semibold text-[18px]">
         <li>
           <Link
             to="/"

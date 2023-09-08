@@ -4,26 +4,30 @@ import shapeImage from "../images/WhatsApp_Image_2023-09-07_at_3.50.57_PM-remove
 
 const LeftBanner = () => {
   return (
-    <div className="flex mx-10">
+    <div className="flex justify-center items-center lg:mx-10 mx-2">
       <article className="flex flex-col items-center justify-center relative">
         <img
           src={profileImage}
           alt="profile image"
-          className="w-[223px] h-[223px] rounded-full border-[#4990EB] border-4 mt-12"
+          className="w-full h-full max-w-[223px] rounded-full border-[#4990EB] border-4 mt-8"
         />
         <div className="relative">
           <img
             src={shapeImage}
             alt="shade image"
-            className="max-w-[30rem] -mt-11"
+            className=" w-full h-[40rem] -mt-16"
           />
-          <div className="absolute top-0 text-white pl-10 pt-12 flex gap-7 flex-col">
-            <span className="text-3xl font-[400]">Hi There 👋</span>
-            <span className="text-[4rem] font-[400]">I’m Shadi</span>
-            <span className="text-[2rem] font-[400]">
+          <div className="absolute top-0 text-white md:pl-10 pl-10 pt-20 flex gap-7 flex-col">
+            <span className="lg:text-[2rem] text-[1.5rem] font-[400]">
+              Hi There 👋
+            </span>
+            <span className="lg:text-[4rem] text-[3rem] font-[400]">
+              I’m Shadi
+            </span>
+            <span className="lg:text-[2rem] text-[1.5rem] font-[400]">
               I'm a Software Engineer,
             </span>
-            <div className="flex gap-7 w-[3rem]">
+            <div className="flex gap-7 lg:w-[2.5rem] w-[2rem]">
               <img
                 width="64"
                 height="50"
@@ -43,21 +47,21 @@ const LeftBanner = () => {
                 alt="twitterx--v2"
               />
             </div>
-            <span className="flex items-center gap-5 mt-8">
+            <span className="sm:flex items-center gap-5 md:mt-5 mt-1">
               <img
-                width="35"
                 height="50"
                 src="https://img.icons8.com/ios-filled/50/FFFFFF/filled-message.png"
                 alt="filled-message"
+                className="lg:w-[2.2rem] w-[1.6rem]"
               />
               <p className="text-xl">shadi876543211@gmail.com</p>
             </span>
-            <span className="flex items-center gap-5 ">
+            <span className="sm:flex items-center gap-5 ">
               <img
-                width="35"
                 height="50"
                 src="https://img.icons8.com/ios-filled/50/FFFFFF/phone.png"
                 alt="phone"
+                className="lg:w-[2.2rem] w-[1.6rem]"
               />
               <p className="text-xl">+970569758730</p>
             </span>
