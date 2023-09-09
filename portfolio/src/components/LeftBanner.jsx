@@ -4,7 +4,7 @@ import shapeImage from "../images/WhatsApp_Image_2023-09-07_at_3.50.57_PM-remove
 
 const LeftBanner = () => {
   return (
-    <div className="flex justify-center items-center lg:mx-5 mx-2 lg:pl-32">
+    <div className="lg:mx-5 mx-2 lg:pl-32">
       <article className="flex flex-col items-center justify-center relative">
         <img
           src={profileImage}
