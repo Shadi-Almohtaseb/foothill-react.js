@@ -4,18 +4,18 @@ import shapeImage from "../images/WhatsApp_Image_2023-09-07_at_3.50.57_PM-remove
 
 const LeftBanner = () => {
   return (
-    <div className="flex justify-center items-center lg:mx-10 mx-2">
+    <div className="flex justify-center items-center lg:mx-5 mx-2 lg:pl-32">
       <article className="flex flex-col items-center justify-center relative">
         <img
           src={profileImage}
           alt="profile image"
-          className="w-full h-full max-w-[223px] rounded-full border-[#4990EB] border-4 mt-8"
+          className="w-full h-full sm:max-w-[223px] max-w-[150px] rounded-full border-[#4990EB] border-4 mt-8"
         />
         <div className="relative">
           <img
             src={shapeImage}
             alt="shade image"
-            className=" w-full h-[40rem] -mt-11"
+            className="md:min-w-[420px] max-w-[500px] w-full h-[40rem] -mt-11"
           />
           <div className="absolute top-0 text-white md:pl-10 pl-10 pt-20 flex gap-7 flex-col">
             <span className="lg:text-[2rem] text-[1.5rem] font-[400]">
@@ -47,23 +47,23 @@ const LeftBanner = () => {
                 alt="twitterx--v2"
               />
             </div>
-            <span className="sm:flex items-center gap-5 md:mt-5 mt-1">
+            <span className="flex items-center gap-5 md:mt-5 mt-1">
               <img
                 height="50"
                 src="https://img.icons8.com/ios-filled/50/FFFFFF/filled-message.png"
                 alt="filled-message"
                 className="lg:w-[2.2rem] w-[1.6rem]"
               />
-              <p className="text-xl">shadi876543211@gmail.com</p>
+              <p className="sm:text-xl text-base">shadi876543211@gmail.com</p>
             </span>
-            <span className="sm:flex items-center gap-5 ">
+            <span className="flex items-center gap-5 ">
               <img
                 height="50"
                 src="https://img.icons8.com/ios-filled/50/FFFFFF/phone.png"
                 alt="phone"
                 className="lg:w-[2.2rem] w-[1.6rem]"
               />
-              <p className="text-xl">+970569758730</p>
+              <p className="sm:text-xl text-base">+970569758730</p>
             </span>
           </div>
         </div>
