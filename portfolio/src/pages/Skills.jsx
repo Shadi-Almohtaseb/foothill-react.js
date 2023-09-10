@@ -14,16 +14,17 @@ import Logo10 from "../images/Logos/react-logo-png.png";
 import Logo11 from "../images/Logos/node-logo-removebg-preview.png";
 import Logo12 from "../images/Logos/redux-logo.png";
 import Logo13 from "../images/Logos/Sql_data_base_with_logo.png";
-import Logo14 from "../images/Logos/svg1.jpg";
+import Logo14 from "../images/Logos/Figma-1-logo.png";
 import Logo15 from "../images/Logos/tailwind-css-logo-removebg-preview.png";
 
 const Skills = () => {
   return (
     <div className="flex items-center justify-between lg:flex-row flex-col">
       <LeftBanner />
-      <div className="flex gap-8 flex-col mt-16 lg:mr-[4rem] w-full  overflow-hidden rounded-lg">
+      <div className="flex items-center justify-center gap-8 flex-col mt-16 lg:ml-9 lg:mr-5 w-full overflow-hidden rounded-lg mb-10">
         <Marquee
           autoFill
+          speed={150}
           className="bg-[#ebebeb] py-6 rounded-lg mx-5 mr-10 h-[14rem]"
         >
           <div className="flex justify-between gap-52 items-center w-full">
@@ -71,6 +72,7 @@ const Skills = () => {
 
         <Marquee
           autoFill
+          speed={150}
           className="bg-[#ebebeb] py-6 rounded-lg mx-5 mr-10 h-[14rem] overflow-hidden"
         >
           <div className="flex justify-between gap-52 items-center w-full">
@@ -84,7 +86,7 @@ const Skills = () => {
             <div>
               <img
                 src={Logo7}
-                style={{ width: "200px", objectFit: "contain" }}
+                style={{ width: "230px", objectFit: "contain" }}
                 alt=""
               />
             </div>
@@ -117,6 +119,7 @@ const Skills = () => {
         </Marquee>
         <Marquee
           autoFill
+          speed={150}
           className="bg-[#ebebeb] py-6 rounded-lg mx-5 mr-10 h-[14rem] overflow-hidden"
         >
           <div className="flex justify-between gap-52 items-center w-full">
@@ -144,7 +147,7 @@ const Skills = () => {
             <div>
               <img
                 src={Logo14}
-                style={{ width: "190px", objectFit: "contain" }}
+                style={{ width: "140px", objectFit: "contain" }}
                 alt=""
               />
             </div>
