@@ -9,7 +9,7 @@ const LeftBanner = () => {
         <img
           src={profileImage}
           alt="profile image"
-          className="w-full h-full sm:max-w-[223px] max-w-[150px] rounded-full border-[#4990EB] border-4 mt-8"
+          className="w-full h-full sm:max-w-[223px] max-w-[170px] rounded-full border-[#4990EB] border-4 mt-8"
         />
         <div className="relative">
           <img
