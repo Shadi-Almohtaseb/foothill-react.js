@@ -5,8 +5,10 @@ import { navList } from "../data/navList";
 
 const Sidebar = ({ displaySideBar, setDisplaySideBar }) => {
   const { activeLink, isLinkActive } = useActiveLink();
+
   return (
     <div
+      onClick={() => setDisplaySideBar(false)}
       className={
         displaySideBar
           ? "fixed right-0 top-0 w-full h-full bg-black/50 z-10"
