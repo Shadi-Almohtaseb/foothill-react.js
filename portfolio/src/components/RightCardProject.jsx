@@ -2,10 +2,10 @@ import React from "react";
 
 const RightCardProject = ({ item }) => {
   return (
-    <div className="flex items-center flex-col bg-[#aeaeae32] p-4 w-fit rounded-lg mt-5 shadow-lg">
+    <div className="flex items-center flex-col bg-[#e0e8f3] p-4 w-fit rounded-lg mt-5 shadow-lg">
       <div className="flex items-center 2xl:flex-row flex-col-reverse px-3">
         <div className="2xl:w-full max-w-[25rem] mt-6 px-3">
-          <div className="flex items-center justify-between gap-9 2xl:ml-10">
+          <div className="flex items-center justify-between gap-9">
             <span className="text-[1.6rem]">{item.title}</span>
             <div className="flex items-center justify-between gap-7">
               <img
