@@ -1,7 +1,13 @@
 import React from "react";
-import Members from "../components/Members";
+import Members from "./Members";
+import { MemberNS } from "../@types/members";
 
-const AddMember = ({ setMembers, setTextInput, members, textInput }) => {
+const AddMember = ({
+  setMembers,
+  setTextInput,
+  members,
+  textInput,
+}: MemberNS.AddMemberProps) => {
   const addMember = () => {
     const member = {
       name: textInput,

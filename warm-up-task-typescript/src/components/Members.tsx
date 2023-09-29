@@ -1,6 +1,7 @@
 import React from "react";
+import { MemberNS } from "../@types/members";
 
-const Members = ({ member }) => {
+const Members = ({ name }: MemberNS.Member) => {
   return (
     <div className="flex items-center justify-center gap-6 max-w-[40rem] w-full shadow-lg bg-[#f2f2f2] rounded-md mt-10 py-2 px-5">
       <img
@@ -10,9 +11,9 @@ const Members = ({ member }) => {
         alt="person-male--v3"
       />
       <span className="bg-[#f2f2f2] rounded-md w-full outline-none">
-        {member.name}
+        {name}
       </span>
-      <input id="link-checkbox" type="checkbox" value="" class="w-5 h-5" />
+      <input id="link-checkbox" type="checkbox" value="" className="w-5 h-5" />
     </div>
   );
 };

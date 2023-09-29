@@ -1,7 +1,8 @@
-import Members from "./components/Members.jsx";
-import Search from "./components/Search.jsx";
-import AddMember from "./components/AddMember.jsx";
 import { useState } from "react";
+import Search from "./components/Search";
+import Members from "./components/Members";
+import { MemberNS } from "./@types/members";
+import AddMember from "./components/AddMember";
 
 function App() {
   const [members, setMembers] = useState(
@@ -18,8 +19,8 @@ function App() {
         members={members}
         textInput={textInput}
       />
-      {members.map((member, index) => (
-        <Members key={index} member={member} />
+      {members.map((member: MemberNS.Member, index: number) => (
+        <Members key={index} name={member.name} />
       ))}
     </div>
   );
