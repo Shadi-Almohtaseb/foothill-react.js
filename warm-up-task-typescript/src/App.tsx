@@ -1,14 +1,15 @@
 import { useState } from "react";
 import Search from "./components/Search";
 import Members from "./components/Members";
-import { MemberNS } from "./@types/members";
+import { Member } from "./@types/members";
 import AddMember from "./components/AddMember";
 
 function App() {
-  const [members, setMembers] = useState(
+  const [members, setMembers] = useState<Member[]>(
     JSON.parse(localStorage.getItem("members") || "[]")
   );
-  const [textInput, setTextInput] = useState([]);
+
+  const [textInput, setTextInput] = useState("");
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -19,7 +20,7 @@ function App() {
         members={members}
         textInput={textInput}
       />
-      {members.map((member: MemberNS.Member, index: number) => (
+      {members.map((member, index) => (
         <Members key={index} name={member.name} />
       ))}
     </div>

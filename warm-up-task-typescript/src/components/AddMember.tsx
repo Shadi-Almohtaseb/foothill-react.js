@@ -1,19 +1,17 @@
-import React from "react";
-import Members from "./Members";
-import { MemberNS } from "../@types/members";
+import type { AddMemberProps } from "../@types/members";
 
 const AddMember = ({
   setMembers,
   setTextInput,
   members,
   textInput,
-}: MemberNS.AddMemberProps) => {
+}: AddMemberProps) => {
   const addMember = () => {
     const member = {
       name: textInput,
     };
     const updatedMembers = [...members, member];
-    localStorage.setItem("members", JSON.stringify(updatedMembers)); // Store as JSON string
+    localStorage.setItem("members", JSON.stringify(updatedMembers));
     setMembers(updatedMembers);
     console.log(updatedMembers);
   };
